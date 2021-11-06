@@ -1,0 +1,15 @@
+{
+  "name": "ip-tracker",
+  "version": "1.0.0",
+  "description": "IP Geolocation tracker using LeafletJS and IPify",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rehan Ankalgi",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  }
+}

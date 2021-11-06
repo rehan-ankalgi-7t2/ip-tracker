@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="/css/main.css">
+    <script type="module" src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>IP Tracker</h1>
+        <form>
+            <input id="ip-field" type="text" name="ip-address" placeholder="search for any IP Address or domain">
+            <button type="submit">Find IP</button>
+        </form>
+    </header>
+    <div class="map__insights">
+        <div class="map__ipAdress map__data">
+            <span>IP ADDRESS</span>
+            <h1 id="ip-address">ip address</h1>
+        </div>
+        <div class="map__location map__data">
+            <span>LOCATION</span>
+            <h1 id="location">location</h1>
+        </div>
+        <div class="map__timezone map__data">
+            <span>TIME ZONE</span>
+            <h1 id="timezone">time zone</h1>
+        </div>
+        <div class="map__isp map__data">
+            <span>ISP</span>
+            <h1 id="isp">isp</h1>
+        </div>
+    </div>
+    <div id="map"></div>
+
+    <script src="index.js" type="module"></script>
+    <script src="config.js" type="module"></script>
+</body>
+</html>
